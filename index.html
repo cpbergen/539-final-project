@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Using this link to grab icons from Font Awesome's free library.-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Modern Movies</title>
 </head>
@@ -27,60 +29,178 @@
 <main id="maincontent">
     <h2>Modern Movies</h2>
     <p>Movies from 2000 to Today.</p>
-    <article>
-        <h3>Upgrade</h3>
-        <img src="images/upgradePoster.jpg" alt="">
-        <p>The camera work and Logan-Marshall Green's Movements are the highlights in this film. The action feels deadly precise, and it's so cool  to watch.</p>
-    </article>
-    <article>
-        <h3>Avatar</h3>
-        <img src="images/avatarPoster.jpg" alt="">
-        <p>Stunning visuals. Wish the story had as much effort put into it as the effects.</p>
-    </article>
-    <article>
-        <h3>Van Helsing</h3>
-        <img src="images/vanHelsingPoster.jpg" alt="">
-        <p>Technically, it's not a great film. But the sheer shameless camp makes it an incredibly enjoyable ride.</p>
-    </article>
-    <article>
-        <h3>Skinamarink</h3>
-        <img src="images/skinamarinkPoster.jpg" alt="">
-        <p>This is a cruel film. It rejects clarity and convention in favor of torturing the viewer with the uncanny. It's not fun. But it's effective. </p>
-    </article>
-    <article>
-        <h3>The One</h3>
-        <img src="images/theOnePoster.jpg" alt="">
-        <p>Goofy film with solid action and a hilarious soundtrack. Ending scene alone is worth the price of admission. </p>
-    </article>
-    <article>
-        <h3>Strange World</h3>
-        <img src="images/strangeWorldPoster.jpg" alt="">
-        <p>I'm biased. I love pulp adventure shlock. This movie feels like a loving send-up, with fun characters and a clever approach to its messaging.</p>
-    </article>
-    <article>
-        <h3>Jupiter Ascending</h3>
-        <img src="images/jupiterAscending.jpg" alt="">
-        <p>Listen. It's bad. It's so, so bad. But's also very funny. I want a whole movie just with Eddie Redmayne's character.</p>
-    </article>
-    <article>
-        <h3>Valerian and the City of a Thousand Planets</h3>
-        <img src="images/valerianPoster.jpg" alt="">
-        <p>Imaginative visuals and neat ideas, but I was way more interested in the city than whatever Valerian had going on.</p>
-    </article>
-    <article>
-        <h3>Evil Dead Rise</h3>
-        <img src="images/evilDeadRisePoster.jpg" alt="">
-        <p>Delightfully creepy and nasty as hell. This is a film that embraces its source material while still carving out a fresh niche for itself.</p>
-    </article>
-    <article>
-        <h3>Madame Web</h3>
-        <img src="images/madameWebPoster.jpg" alt="">
-        <p>There is so much wrong with this film. The editing is all over the place. The story makes no sense. There is an egregious amount of obvious product placement. The only things that made the film even slightly enjoyable were Zooey Deschanel's ironic, checked-out performance and Tahar Rahim's stunningly bad ADR dialogue.</p>
-    </article>
-    <article>
-        <h3>Bullet Train</h3>
-        <img src="images/bulletTrainPoster.jpg" alt="">
-        <p>It's a good time. The action is slick, the characters were fun, and the plot has some neat twists. The celebrity appearances got a little annoying.</p>
+    <section id="poster-gallery">
+        <article>
+            <a class="movie-cell">
+                <h3>Upgrade</h3>
+                <img src="images/upgradePoster.jpg" alt="">
+                <div title="Rating is 3 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/upgradePoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 3 stars out of 5.">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p>The camera work and Logan-Marshall Green's Movements are the highlights in this film. The action feels deadly precise, and it's so cool  to watch.</p>
+                </div>
+            </div>
+        </article>
+        <article class="movie-cell">
+            <h3>Avatar</h3>
+            <a class="movie-cell">
+                <img src="images/avatarPoster.jpg" alt="">
+                <div title="Rating is 2 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Stunning visuals. Wish the story had as much effort put into it as the effects.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Van Helsing</h3>
+                <img src="images/vanHelsingPoster.jpg" alt="">
+                <div title="Rating is 2 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Technically, it's not a great film. But the sheer shameless camp makes it an incredibly enjoyable ride.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Skinamarink</h3>
+                <img src="images/skinamarinkPoster.jpg" alt="">
+                <div title="Rating is 4 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>This is a cruel film. It rejects clarity and convention in favor of torturing the viewer with the uncanny. It's not fun. But it's effective. </p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>The One</h3>
+                <img src="images/theOnePoster.jpg" alt="">
+                <div title="Rating is 2 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Goofy film with solid action and a hilarious soundtrack. Ending scene alone is worth the price of admission. </p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Strange World</h3>
+                <img src="images/strangeWorldPoster.jpg" alt="">
+                <div title="Rating is 3 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>I'm biased. I love pulp adventure shlock. This movie feels like a loving send-up, with fun characters and a clever approach to its messaging.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+
+                <h3>Jupiter Ascending</h3>
+                <img src="images/jupiterAscending.jpg" alt="">
+                <div title="Rating is 1 star out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Listen. It's bad. It's so, so bad. But's also very funny. I want a whole movie just with Eddie Redmayne's character.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Valerian and the City of a Thousand Planets</h3>
+                <img src="images/valerianPoster.jpg" alt="">
+                <div title="Rating is 2 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Imaginative visuals and neat ideas, but I was way more interested in the city than whatever Valerian had going on.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Evil Dead Rise</h3>
+                <img src="images/evilDeadRisePoster.jpg" alt="">
+                <div title="Rating is 4 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>Delightfully creepy and nasty as hell. This is a film that embraces its source material while still carving out a fresh niche for itself.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Madame Web</h3>
+                <img src="images/madameWebPoster.jpg" alt="">
+                <div title="Rating is 1 star out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <p>There is so much wrong with this film. The editing is all over the place. The story makes no sense. There is an egregious amount of obvious product placement. The only things that made the film even slightly enjoyable were Zooey Deschanel's ironic, checked-out performance and Tahar Rahim's stunningly bad ADR dialogue.</p>
+        </article>
+        <article>
+            <a class="movie-cell">
+                <h3>Bullet Train</h3>
+                <img src="images/bulletTrainPoster.jpg" alt="">
+                <div title="Rating is 4 stars out of 5.">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked "></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <div class="overlay">
+            <p>It's a good time. The action is slick, the characters were fun, and the plot has some neat twists. The celebrity appearances got a little annoying.</p>
+            </div>
+        </div>
+    </section>
     </article>
 
 
@@ -88,5 +208,5 @@
 
 </main>
 </body>
-<script></script>
+<script src="js/reviewPage.js"></script>
 </html>
