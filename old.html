@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&family=Birthstone&display=swap" rel="stylesheet">
        <!--Using this link to grab icons from Font Awesome's free library.-->
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -29,72 +29,150 @@
         </nav>
     </header>
     <main id="maincontent">
+    <section id="page-title">
         <h2>Old Movies</h2>
         <p>Movies from 1900s-1950s</p>
+    </section>
     <section id="poster-gallery">
         <article>
-            <h3>Seven Samurai</h3>
-            <img src="images/sevenSamuraiPoster.jpg" alt="">
-            <!-- Retrieved the following "span class" code from w3 schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
-             <!--Since div blocks don't have alt-text, I used the title to help screen-readers read the star rating.-->
-        <div title="Rating is 5 stars out of 5.">
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-        </div>
-            <p>Somehow down-to-earth yet stunningly epic, this film captivated me. It's as uplifting as it is tragic - a tale of idealism in a cynical world.</p>
+            <a class="movie-cell">
+                <h3>Seven Samurai</h3>
+                <img src="images/sevenSamuraiPoster.jpg" alt="">
+                <!-- Retrieved the following "span class" code from w3 schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating-->
+                <!--Since div blocks don't have alt-text, I used the title to help screen-readers read the star rating.-->
+            <div title="Rating is 5 stars out of 5." class="bottom-bar">
+                <span class="fa fa-star checked fa-xl"></span>
+                <span class="fa fa-star checked fa-xl"></span>
+                <span class="fa fa-star checked fa-xl"></span>
+                <span class="fa fa-star checked fa-xl"></span>
+                <span class="fa fa-star checked fa-xl"></span>
+            </div>
+        </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/sevenSamuraiPoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 5 stars out of 5." class="star-bar">
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg "></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                    </div>
+                    <p>Somehow down-to-earth yet stunningly epic, this film captivated me. It's as uplifting as it is tragic - a tale of idealism in a cynical world.</p>
+                </div>
+            </div>
         </article>
         <article>
-            <h3>The Cabinent of Dr. Caligari</h3>
-            <img src="images/theCabinentPoster.jpg" alt="">
-            <div title="Rating is 4 stars out of 5.">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+            <a class="movie-cell">
+                <h3>The Cabinent of Dr. Caligari</h3>
+                <img src="images/theCabinentPoster.jpg" alt="">
+                <div title="Rating is 4 stars out of 5." class="bottom-bar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/theCabinentPoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 5 stars out of 5." class="star-bar">
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg "></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star fa-lg"></span>
+                    </div>
+                    <p>Striking visuals that transcend the limitations of its time, with an eerie psychological horror underlying it. It's a classic for a reason.</p>
+                </div>
             </div>
-            <p>Striking visuals that transcend the limitations of its time, with an eerie psychological horror underlying it. It's a classic for a reason.</p>
         </article>
         <article>
-            <h3>Citizen Kane</h3>
-            <img src="images/citizenKanePoster.jpg" alt="">
-            <div title="Rating is 5 stars out of 5." class="star-bar">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
+            <a class="movie-cell">
+                <h3>Citizen Kane</h3>
+                <img src="images/citizenKanePoster.jpg" alt="">
+                <div title="Rating is 5 stars out of 5." class="bottom-bar" >
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/citizenKanePoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 5 stars out of 5." class="star-bar">
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg "></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                    </div>
+                    <p>Beautifully shot, incredibly acted, and with a message about corruption and greed that still resonates more than 80 years later. While the jury is still out if it's "the greatest film of all time", I can see why many would give it that title.</p>
+                </div>
             </div>
-            <p>Beautifully shot, incredibly acted, and with a message about corruption and greed that still resonates more than 80 years later. While the jury is still out if it's "the greatest film of all time", I can see why many would give it that title.</p>
         </article>
         <article>
-            <h3>Rear Window</h3>
-            <img src="images/rearWindowPoster.jpg" alt="">
-            <div title="Rating is 4 stars out of 5.">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
+            <a class="movie-cell">
+                <h3>Rear Window</h3>
+                <img src="images/rearWindowPoster.jpg" alt="">
+                <div title="Rating is 4 stars out of 5." class="bottom-bar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/rearWindowPoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 5 stars out of 5." class="star-bar">
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star fa-lg"></span>
+                    </div>
+                    <p>While undeniably dated in some respects - the main character gets to be a jerk with little to no consequences- it is still a highly engaging suspsense thriller.</p>
+                </div>
             </div>
-            <p>While undeniably dated in some respects - the main character gets to be a jerk with little to no consequences- it is still a highly engaging suspsense thriller.</p>
         </article>
-            <article>
-            <h3>Forbidden Planet</h3>
-            <img src="images/forbiddenPlanetPoster.jpg" alt="">
-            <div title="Rating is 3 stars out of 5.">
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
+        <article>
+            <a class="movie-cell">
+                <h3>Forbidden Planet</h3>
+                <img src="images/forbiddenPlanetPoster.jpg" alt="">
+                <div title="Rating is 3 stars out of 5." class="bottom-bar">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+            </a>
+            <div class="overlay">
+                <div class="review-cell">
+                    <img src="images/forbiddenPlanetPoster.jpg" alt="">
+                    <h4>Review</h4>
+                    <div title="Rating is 5 stars out of 5." class="star-bar">
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg"></span>
+                        <span class="fa fa-star checked fa-lg "></span>
+                        <span class="fa fa-star fa-lg"></span>
+                        <span class="fa fa-star fa-lg"></span>
+                    </div>
+                    <p> This film is the inspiration of so much of the modern Sci-Fi genre, including Star Trek and Star Wars. The effects are still decent considering the time period, but the characters suffer the worst from the film's age. None of them have much depth, and they simply serve as vehicles for the film's somewhat intereting mystery. </p>
+                </div>
             </div>
-            <p> This film is the inspiration of so much of the modern Sci-Fi genre, including Star Trek and Star Wars. The effects are still decent considering the time period, but the characters suffer the worst from the film's age. None of them have much depth, and they simply serve as vehicles for the film's somewhat intereting mystery. </p>
-        </article>
+    </article>
     </section>
     </main>  
 </body>
+<script src="js/reviewPage.js"></script>
 </html>

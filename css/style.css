@@ -1,7 +1,8 @@
 body {
   margin: 8px;
   font-family: Assistant, sans-serif;
-  background-color: darkgrey;
+  background-color: black;
+
 }
 
 .skip a {
@@ -13,30 +14,63 @@ body {
     position: absolute;
     top: 20px;
   }
+  /*I want to design this page so that it immerses people into the theater setting, hence the background image I chose. Image came from https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE*/
+  header {
+    background-color: black;
+    color: white;
+    background-image: url("/images/theaterBackdrop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -8em;
+    background-position-x: center;
+  }
 
-  /*I'm aiming to build a visually appealing title with plenty of spacing*/
+  header h1 {
+    background-color: rgba(0, 0, 0, 0.205);
+  
+  }
+
+
+  /*I'm aiming to build  visually appealing titles with plenty of spacing*/
   h1 {
     display: flex;
     justify-content: center;
     width: 100%;
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 2.5em;
+    font-size: 3em;
+    font-family: Birthstone, 'Times New Roman', Times, serif;
   }
 
   h2 {
     font-size: 1.6em;
+    font-family: Rufina, 'Times New Roman', Times, serif;
   }
 
   h3 {
     font-size: 1.3em;
+    font-family: Rufina, 'Times New Roman', Times, serif;
   }
+
+  h4 {font-family: Rufina, 'Times New Roman', Times, serif;
+  font-size: 1.1em;}
+
+#page-title {
+  display: block;
+  padding: .5em;
+  text-align: center;
+  line-height: 2em;
+  border-top: black solid 1px;
+  border-bottom: black solid 1px;
+  background-color: white;
+}
 
   /*Working on creating a clean, visually appealing nav bar for mobile view.*/
 nav {
   background-color: lightblue;
-  margin: 2px;
-  padding: 5px;
+  padding: 5px; */
+  border-left: 1em solid lightblue;
+  border-right: 1em solid lightblue;
 }
 
 .top-bar {
@@ -58,8 +92,15 @@ nav {
   color: white;
 }
 
-/* .top-bar li a:hover */
-/* .current */
+.top-bar li a:hover{
+  background-color: white;
+  color: black;
+}
+
+.top-bar #current{
+  background-color: white;
+  color: black;
+}
 
 /*I'm aiming to organize a gallery by posters, which each item in the gallery being clickable.*/
 #poster-gallery {
@@ -74,7 +115,7 @@ article {
   background-color:  grey;
   padding: .5em;
   margin: 1em; 
-  transition: width 2s, font-size 2s;
+  transition: width 1s, font-size 1s;
   width: 20em;
   justify-content: center;
   justify-items: center;
@@ -120,6 +161,8 @@ article:hover {
   display: none; /* Initially hidden */
   }
 
+
+  /*I wrote this code to help make the review cells visually pleasing.*/
   .review-cell{
     display: inline-block;
     margin-left: 1em;
@@ -127,7 +170,7 @@ article:hover {
     top: 10%;
     position: fixed;
     background-color: white;
-  
+    /* overflow: auto; */
   }
 
   .review-cell img {
@@ -139,7 +182,49 @@ article:hover {
     text-align: center;
   }
 
-  .review-cell p {
+  .review-cell > p {
   padding: .5em;
+  overflow: scroll;
+  border-left: 2px red solid;
+  border-right: 2px red solid;
+  border-bottom: 2px red solid;
   }
+
+
+  /*Attempting to add some spacing between the bars and the rest of the movie cell.*/
+
+  .star-bar {
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .star-bar .fa {
+    background-color: white;
+    padding: .5em;
+    margin: -1px;
+
+  }
+
+.bottom-bar {
+  margin-top: .5rem;
+  justify-self: center;
+  font-size: x-large
+}
+
+@media screen and (min-width: 750px) {
+article  .movie-cell {min-width: 20%;}
+article:hover {
+  font-size: 120%; }
+
+
+
+  article > a > img  {
+  height: 450px;
+  }
+
+
+  }
+
 
