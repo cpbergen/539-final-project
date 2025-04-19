@@ -1,7 +1,7 @@
 body {
   margin: 8px;
   font-family: Assistant, sans-serif;
-  background-color: black;
+  background-color: rgb(10, 10, 10);
 
 }
 
@@ -61,16 +61,15 @@ body {
   text-align: center;
   line-height: 2em;
   border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  background-color: white;
+  border-bottom: red solid 1px;
+  color: white;
 }
 
   /*Working on creating a clean, visually appealing nav bar for mobile view.*/
 nav {
-  background-color: lightblue;
+  background-color: #c0c1c1;
   padding: 5px; */
-  border-left: 1em solid lightblue;
-  border-right: 1em solid lightblue;
+
 }
 
 .top-bar {
@@ -82,11 +81,11 @@ nav {
 
 .top-bar li a{
   display: flex;
-  background-color: red;
+  background-color: #7e1616;
   width: 3em;
   padding: 1em;
   justify-content: center;
-  border: 2px yellow solid;
+  border: 2px #fcc252 solid;
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -112,7 +111,6 @@ nav {
 }
 
 article {
-  background-color:  grey;
   padding: .5em;
   margin: 1em; 
   transition: width 1s, font-size 1s;
@@ -137,13 +135,24 @@ article > a > p {
  padding: .5em; 
 }
 
+.movie-cell {
+  background-color:  grey;
+  padding-bottom: 2em;
+}
+
+.movie-cell h3 {
+  color: white;
+  justify-self: center;
+}
+
 
 /*Grabbed this code from w3schools at https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating*/
 .checked {
   color: orange;
 }
 
-article:hover {
+/*Note to self - this used to be article:hover */
+.movie-cell:hover {
   width: 90%;
   font-size: 120%;
 }
@@ -213,7 +222,22 @@ article:hover {
   font-size: x-large
 }
 
+footer {
+  border-top: red 1px solid;
+}
+
 @media screen and (min-width: 750px) {
+
+main {
+  background-image: url("/images/movieScreen.jpg");
+  background-size: cover;
+  background-color: black;
+  background-blend-mode: luminosity;
+}
+
+#page-title {
+  background-color: black;
+}
 article  .movie-cell {min-width: 20%;}
 article:hover {
   font-size: 120%; }
@@ -224,7 +248,43 @@ article:hover {
   height: 450px;
   }
 
+  article > a > img:hover  {
+    height: auto;
+    }
+
+  .review-cell {
+    width: 400px;
+    margin-left: 1em;
+    margin-right: 1em;
+    left: 35%;
+    right: 35%;
+    top: 5%;
+
 
   }
 
+  header {
+    background-image: url("/images/theaterBackdrop.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -30em;
+    background-position-x: center;
+  }
 
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .movie-cell:hover {
+      width: none;
+      font-size: none;
+    }
+
+    article:hover {
+      font-size: revert;
+      box-shadow: 0px 0px 40px 20px #98b7d0;
+    }
+
+    article > a > img:hover  {
+      height: revert;
+      }
+  }
