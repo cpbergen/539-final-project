@@ -152,10 +152,21 @@ article > a > p {
 }
 
 /*Note to self - this used to be article:hover */
+.movie-cell {
+  transition: width .5s, font-size .2s;
+  
+}
+
 .movie-cell:hover {
   width: 90%;
   font-size: 120%;
 }
+
+article h3 {
+  background-color: rgba(0, 0, 0, 0.219);
+  padding: 10 em;
+}
+
 
 
 /*Blair Bocklet provided this code.*/
