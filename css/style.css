@@ -5,6 +5,8 @@ body {
 
 }
 
+
+
 .skip a {
     top: -40px;
     position: absolute;
@@ -21,7 +23,7 @@ body {
     background-image: url("../images/theaterBackdrop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -8em;
+    background-position-y: -7em;
     background-position-x: center;
   }
 
@@ -235,7 +237,12 @@ article h3 {
 
 footer {
   border-top: red 1px solid;
-}
+  color: white; }
+
+  footer p { 
+    justify-self: center;
+    padding: .5em;
+  }
 
 @media screen and (min-width: 750px) {
 
@@ -278,7 +285,7 @@ article:hover {
     background-image: url("../images/theaterBackdrop.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position-y: -30em;
+    background-position-y: -35em;
     background-position-x: center;
   }
 
