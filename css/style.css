@@ -18,7 +18,7 @@ body {
   header {
     background-color: black;
     color: white;
-    background-image: url("/images/theaterBackdrop.jpg");
+    background-image: url("images/theaterBackdrop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: -8em;
@@ -275,7 +275,7 @@ article:hover {
   }
 
   header {
-    background-image: url("/images/theaterBackdrop.jpg");
+    background-image: url("images/theaterBackdrop.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -30em;
