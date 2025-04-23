@@ -254,6 +254,42 @@ footer {
     padding: .5em;
   }
 
+  /*This is specifically to style the 404 page.*/
+#fourohfour-section {
+  display: grid;
+  grid-template-columns: 1fr;
+color: white;
+
+}
+
+#fourohfour-section img {
+
+justify-self: center;
+}
+
+#fourohfour-section h2, p {
+
+  justify-self: center;
+  margin: .5em;
+  }
+  
+  #fourohfour-section a {
+    justify-self: center;
+    background-color: #7e1616;
+    padding: 1em;
+    margin: .5em;
+    border: 2px #fcc252 solid;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+  }
+
+
+  #fourohfour-section a:hover{
+    background-color: white;
+    color: black;
+  }
+
 @media screen and (min-width: 750px) {
 
 main {
@@ -266,6 +302,9 @@ main {
 #page-title {
   background-color: black;
 }
+
+
+
 article  .movie-cell {min-width: 20%;}
 article:hover {
   font-size: 120%; }
