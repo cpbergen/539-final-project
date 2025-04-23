@@ -10,12 +10,22 @@ body {
 .skip a {
     top: -40px;
     position: absolute;
+    background-color: white;
+    padding: .5em
   }
 
   .skip a:focus {
     position: absolute;
     top: 20px;
   }
+
+
+  
+  article:focus img {
+    border: white 5px solid;
+
+  }
+
   /*I want to design this page so that it immerses people into the theater setting, hence the background image I chose. Image came from https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE*/
   header {
     background-color: black;
