@@ -6,7 +6,6 @@ body {
 }
 
 
-
 .skip a {
     top: -40px;
     position: absolute;
@@ -21,10 +20,18 @@ body {
 
 
   
-  article:focus img {
+  .movie-cell:focus img {
     border: white 5px solid;
 
   }
+
+  /*I want to add a nice background image to the mobile view. Initially I wanted to show the full image, but I accidentally discovered that the extremely zoomed-in image actually made for a better mobile background. */
+main {
+  background-image: url("../images/popcorn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat
+
+}
 
   /*I want to design this page so that it immerses people into the theater setting, hence the background image I chose. Image came from https://unsplash.com/photos/red-cinema-chair-evlkOfkQ5rE*/
   header {
@@ -41,6 +48,7 @@ body {
     background-color: rgba(0, 0, 0, 0.205);
   
   }
+
 
 
   /*I'm aiming to build  visually appealing titles with plenty of spacing*/
@@ -169,10 +177,6 @@ article > a > p {
   
 }
 
-.movie-cell:hover {
-  width: 90%;
-  font-size: 120%;
-}
 
 article h3 {
   background-color: rgba(0, 0, 0, 0.219);
@@ -216,7 +220,7 @@ article h3 {
 
   .review-cell > p {
   padding: .5em;
-  overflow: scroll;
+  overflow: auto;
   border-left: 2px red solid;
   border-right: 2px red solid;
   border-bottom: 2px red solid;
@@ -303,20 +307,25 @@ main {
   background-color: black;
 }
 
+.movie-cell {
+  transition: .5s
+}
 
-
-article  .movie-cell {min-width: 20%;}
-article:hover {
-  font-size: 120%; }
+.movie-cell:hover {
+  font-size: 120%; 
+}
 
 
 
   article > a > img  {
   height: 450px;
+  width: 301.5px;
   }
 
   article > a > img:hover  {
+    width: 101%;
     height: auto;
+
     }
 
   .review-cell {
@@ -339,6 +348,14 @@ article:hover {
   }
 
   }
+
+  .movie-cell:focus img {
+
+  font-size: 120%; 
+  border: none;
+
+  }
+
 
   @media (prefers-reduced-motion: reduce) {
     .movie-cell:hover {
