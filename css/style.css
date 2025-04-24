@@ -88,7 +88,7 @@ main {
   /*Working on creating a clean, visually appealing nav bar for mobile view.*/
 nav {
   background-color: #c0c1c1;
-  padding: 5px; */
+  padding: 5px;
 
 }
 
@@ -180,7 +180,7 @@ article > a > p {
 
 article h3 {
   background-color: rgba(0, 0, 0, 0.219);
-  padding: 10 em;
+  padding: 10em;
 }
 
 
@@ -359,8 +359,8 @@ main {
 
   @media (prefers-reduced-motion: reduce) {
     .movie-cell:hover {
-      width: none;
-      font-size: none;
+      width: revert;
+      font-size: revert;
     }
 
     article:hover {
