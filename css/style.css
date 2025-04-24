@@ -174,7 +174,6 @@ article > a > p {
 /*Note to self - this used to be article:hover */
 .movie-cell {
   transition: width .5s, font-size .2s;
-  
 }
 
 
