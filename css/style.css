@@ -19,7 +19,6 @@ body {
   }
 
 
-  
   .movie-cell:focus img {
     border: white 5px solid;
 
@@ -29,7 +28,7 @@ body {
 main {
   background-image: url("../images/popcorn.jpg");
   background-size: cover;
-  background-repeat: no-repeat
+  background-repeat: no-repeat;
 
 }
 
@@ -389,7 +388,7 @@ main {
     margin-right: 1em;
     left: 35%;
     top: 5%;
-    font-size: 150%;
+    font-size: 125%;
 
 
   }
