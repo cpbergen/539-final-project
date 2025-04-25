@@ -4,7 +4,6 @@
 
 // function hideOverlay() {
 // document.querySelector(".overlay").style.display = "none";}
-   
 let selectOverlay = document.querySelectorAll(".overlay")
 
 
