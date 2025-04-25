@@ -242,10 +242,10 @@ article h3 {
   }
 
 .bottom-bar {
+  display: flex;
   margin-top: .5rem;
   justify-self: center;
   font-size: x-large;
-  text-justify: center;
 }
 
 footer {
